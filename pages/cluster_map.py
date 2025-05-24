@@ -21,11 +21,11 @@ with st.expander("See source code"):
         cities = "https://github.com/razekmh/Sreamlit-geo-example/blob/a8aa60c5fb144010d4823d74babf8cacd8aec146/data/sample_locations.csv"
         regions = "https://github.com/razekmh/Sreamlit-geo-example/blob/a8aa60c5fb144010d4823d74babf8cacd8aec146/data/sa_regions.geojson"
 
-        m.add_geojson(regions, layer_name="US Regions")
+        m.add_geojson(regions, layer_name="SA Regions")
         m.add_points_from_xy(
             cities,
-            x="longitude",
-            y="latitude",
+            x="Longitude",
+            y="Latitude",
             color_column="region",
             icon_names=["gear", "map", "leaf", "globe"],
             spin=True,
