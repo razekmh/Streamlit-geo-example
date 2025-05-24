@@ -18,8 +18,8 @@ st.title("Marker Cluster")
 with st.expander("See source code"):
     with st.echo():
         m = leafmap.Map(center=[40, -100], zoom=4)
-        cities = "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv"
-        regions = "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_regions.geojson"
+        cities = "https://github.com/razekmh/Sreamlit-geo-example/blob/a8aa60c5fb144010d4823d74babf8cacd8aec146/data/sample_locations.csv"
+        regions = "https://github.com/razekmh/Sreamlit-geo-example/blob/a8aa60c5fb144010d4823d74babf8cacd8aec146/data/sa_regions.geojson"
 
         m.add_geojson(regions, layer_name="US Regions")
         m.add_points_from_xy(
