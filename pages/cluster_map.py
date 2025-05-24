@@ -19,7 +19,7 @@ with st.expander("See source code"):
     with st.echo():
         m = leafmap.Map(center=[40, -100], zoom=4)
         cities = "https://github.com/razekmh/Sreamlit-geo-example/blob/a8aa60c5fb144010d4823d74babf8cacd8aec146/data/sample_locations.csv"
-        regions = "https://github.com/razekmh/Sreamlit-geo-example/blob/f1091f2d62aec42dc375133ab8e0ae93ad8420d2/data/sa_qgis.geojson"
+        regions = "https://drive.google.com/uc?export=download&id=1I0Tcii9hJuI2esB-eDT7Iczv5QoJ-IJ9"
 
         m.add_geojson(regions, layer_name="SA Regions")
         m.add_points_from_xy(
